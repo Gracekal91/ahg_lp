@@ -4,14 +4,6 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import { BsEnvelopeFill, BsInfo } from 'react-icons/bs'
 import herobg from '../img/herobg.jpg'
 
-//Set defaults Breakpoints
-
-// setDefaultBreakpoints([
-//     { lg: 1200 },
-//     { m: 880 },
-//     { s: 420 },
-// ]);
-
 //Custom Styles
 
 const heroStyle = {
@@ -43,7 +35,6 @@ const HeroLeft = () => {
                 style={{ position: 'relative', zIndex: 50, color: 'white', paddingLeft: '3rem' }}>
                 <InnerHeroLeft className="innerHeroLeft" />
             </Container>
-
         </Container>
     )
 }
@@ -78,8 +69,6 @@ const InnerHeroLeft = () => {
                     Get In Touch
                 </Button>
             </Breakpoint>
-
-
         </div>
     )
 }
@@ -93,7 +82,7 @@ const Hero = () => {
                 <Breakpoint customQuery="(min-width: 880px)">
                     <Row style={{ height: '600px', marginLeft: '-22px' }}>
                         <Col><HeroLeft /></Col>
-                        <Col className="secondCol">2 of 2</Col>
+                        <Col className="secondCol"></Col>
                     </Row>
                 </Breakpoint>
 
@@ -102,11 +91,7 @@ const Hero = () => {
                         <Col><HeroLeft /></Col>
                     </Row>
                 </Breakpoint>
-                <Breakpoint customQuery="(max-width: 420px)">
-                    <Row style={{ height: '600px', marginLeft: '-22px' }}>
-                        <Col><HeroLeft /></Col>
-                    </Row>
-                </Breakpoint>
+
             </Container>
         </div >
     )

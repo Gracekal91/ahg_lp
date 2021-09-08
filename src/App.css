@@ -1,8 +1,1 @@
-//Medi query Hero section
 
-@media screen and (max-width: 850px){
-  .secondCol{
-    display: none !important;
-    color: red !important;
-  }
-}
