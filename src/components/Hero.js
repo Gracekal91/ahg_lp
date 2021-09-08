@@ -12,8 +12,8 @@ const heroStyle = {
 }
 
 const overlayStyle = {
-    background: 'blue',
-    opacity: .2,
+    background: '#0577B4',
+    opacity: .3,
     height: '600px',
     position: 'absolute',
     top: 0,
@@ -58,7 +58,7 @@ const InnerHeroLeft = () => {
                     Learn More
                 </Button>
 
-                <Button size="md" variant="success" >
+                <Button size="md" style={{ background: '#0577B4' }} >
                     <BsEnvelopeFill className="me-2 mb-1" />
                     Get In Touch
                 </Button>

@@ -9,9 +9,6 @@ import Skills from "./components/Skills";
 
 import './App.css'
 
-
-
-
 function App() {
   return (
     <React.Fragment>

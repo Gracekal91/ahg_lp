@@ -32,9 +32,10 @@ const SingleCard = () => {
 
     const card = datas.map((item) => {
         return (
-            <Card style={cardStyle} key={item.id}>
+            <Card style={cardStyle} key={item.id} className="cards">
                 <Card.Body>
-                    <img src={item.icon} alt="profile" style={{ height: '50px', color: 'white', opacity: .8 }} />
+                    <img src={item.icon} alt="profile" style={{ height: '50px', color: 'white', opacity: .8 }}
+                        className="mb-4" />
                     <Card.Title>{item.title}</Card.Title>
                     <Card.Text style={{ opacity: .8 }}>{item.text}</Card.Text>
                 </Card.Body>
@@ -49,14 +50,14 @@ const SingleCard = () => {
 //Custom Style
 
 const skillStyle = {
-    backgroundColor: 'blue',
-    height: '350px',
+    backgroundColor: '#0577B4',
+    height: '400px',
     alignItems: 'center',
     display: 'flex'
 }
 
 const skillStyleMobile = {
-    backgroundColor: 'blue',
+    backgroundColor: '#0577B4',
     height: 'auto',
     alignItems: 'center',
     display: 'flex',
@@ -68,13 +69,16 @@ const skillStyleMobile = {
 
 const cardStyle = {
     width: '100%',
-    background: 'blue',
+    background: '#0577B4',
     color: 'white',
     border: 'none',
     textAlign: 'center',
-    justifyContent: 'center'
-
+    justifyContent: 'center',
+    webkitBoxShadow: '0px 10px 13px -7px #000000, -12px 23px 30px -4px rgba(0,0,0,0.51)',
+    Boxshadow: '0px 10px 13px -7px #000000, -12px 23px 30px -4px rgba(0,0,0,0.51)',
+    marginLeft: '.3rem'
 }
+
 
 const Skills = () => {
     return (
