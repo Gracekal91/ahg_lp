@@ -2,9 +2,10 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap"
 import { BsHouseFill } from 'react-icons/bs';
 import { FaPhone } from 'react-icons/fa'
+
 const Navigation = () => {
     return (
-        <Navbar bg="dark" expand="lg" variant="dark" sticky="top">
+        <Navbar style={{ background: '#152238' }} expand="lg" variant="dark" sticky="top">
             <Container>
                 <Navbar.Brand href="#">AHG</Navbar.Brand>
 

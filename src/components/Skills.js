@@ -50,14 +50,14 @@ const SingleCard = () => {
 //Custom Style
 
 const skillStyle = {
-    backgroundColor: '#0577B4',
+    backgroundColor: '#23395d',
     height: '400px',
     alignItems: 'center',
     display: 'flex'
 }
 
 const skillStyleMobile = {
-    backgroundColor: '#0577B4',
+    backgroundColor: '#23395d',
     height: 'auto',
     alignItems: 'center',
     display: 'flex',
@@ -69,7 +69,7 @@ const skillStyleMobile = {
 
 const cardStyle = {
     width: '100%',
-    background: '#0577B4',
+    background: '#23395d',
     color: 'white',
     border: 'none',
     textAlign: 'center',
