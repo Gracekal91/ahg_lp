@@ -21,13 +21,6 @@ const imgStyle = {
 
 }
 
-const imgStyleMobile = {
-    margin: '0 auto',
-    height: '300px',
-    maxWidth: '100%',
-    borderRadius: '8px',
-    boxShadow: '-10px 5px 30px rgba(0, 0, 0, 0.5)'
-}
 
 const About = () => {
     return (
@@ -36,12 +29,12 @@ const About = () => {
                 <Row
                     style={rowStyle}
                     className="bt-3 pb-3">
-                    <h1 style={{ textAlign: 'center', paddingBottom: '2rem' }}>The Best Security Solution in Town</h1>
+                    <h1 style={{ textAlign: 'center', paddingBottom: '2rem', color: '#23395d', textTransform: 'uppercase' }}>The Best Security Solution in Town</h1>
 
                     <Col>
                         <img src={sec} alt="feature" style={imgStyle} />
                     </Col>
-                    <Col>
+                    <Col style={{ paddingLeft: '2rem' }}>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                         </p>
