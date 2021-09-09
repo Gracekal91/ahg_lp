@@ -5,6 +5,7 @@ import { BreakpointProvider } from 'react-socks';
 import Navigation from "./components/Navigation"
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
+import About from "./components/About";
 
 
 import './App.css'
@@ -16,6 +17,7 @@ function App() {
         <Navigation />
         <Hero />
         <Skills />
+        <About />
       </BreakpointProvider>
     </React.Fragment>
   );
