@@ -28,31 +28,32 @@ const ForMobile = () => {
                     <h2 style={{ color: 'white', paddingBottom: '2rem' }}>Leave us your details and we will be in touch to discuss if we are the best fit for you.</h2>
                 </Col>
                 <Col>
-                    <form>
-                        <Form>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Control type="text" placeholder="Enter your Name" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Control type="email" placeholder="Enter your surname" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Control type="email" placeholder="Enter your Email" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Control type="email" placeholder="Enter your cellphone No" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                <Form.Control as="textarea" rows={3} placeholder="Drop us a line" />
-                            </Form.Group>
-                            <div>
-                                <Button type='submit' style={{ width: '100%' }}>Submit</Button>
-                            </div>
-                            <Form.Text className="text-muted" style={{ fontSize: '10px' }}>
-                                We'll never share your email with anyone else.
-                            </Form.Text>
-                        </Form>
-                    </form>
+                    <Form name="contact v1" method="post">
+                        <input type="hidden" name="form-name" value="contact v1" />
+
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Control type="text" name="name" placeholder="Enter your Name" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Control type="text" name="surname" placeholder="Enter your surname" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Control type="email" name="email" placeholder="Enter your Email" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Control type="tel" name="phone" placeholder="Enter your cellphone No" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                            <Form.Control as="textarea" name="message" rows={6} placeholder="Drop us a line" />
+                        </Form.Group>
+                        <div>
+                            <Button type='submit' style={{ width: '100%' }}>Submit</Button>
+                        </div>
+                        <Form.Text className="text-muted" style={{ fontSize: '10px' }}>
+                            We'll never share your email with anyone else.
+                        </Form.Text>
+                    </Form>
+
                 </Col>
             </Row>
         </Breakpoint>
@@ -70,36 +71,40 @@ const Contact = () => {
                         <h1 style={{ color: 'white' }}>Leave us your details and we will be in touch to discuss if we are the best fit for you.</h1>
                     </Col>
                     <Col>
-                        <form>
-                            <Form>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Control type="text" placeholder="Enter your Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Control type="email" placeholder="Enter your surname" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Control type="email" placeholder="Enter your Email" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Control type="email" placeholder="Enter your cellphone No" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                    <Form.Control as="textarea" rows={3} placeholder="Drop us a line" />
-                                </Form.Group>
-                                <div>
-                                    <Button type='submit' style={{ width: '50%' }}>Submit</Button>
-                                </div>
-                                <Form.Text className="text-muted" style={{ fontSize: '10px' }}>
-                                    We'll never share your email with anyone else.
-                                </Form.Text>
-                            </Form>
-                        </form>
+                        <Form name="contact v1" method="post">
+                            <input type="hidden" name="form-name" value="contact v1" />
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Control type="text" placeholder="Enter your Name" name="name" />
+                            </Form.Group>
+
+                            <Form.Group className="mb-3" controlId="formBasicEmail" name="surname">
+                                <Form.Control type="text" placeholder="Enter your surname" />
+                            </Form.Group>
+
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Control type="email" placeholder="Enter your Email" name="email" />
+                            </Form.Group>
+
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Control type="text" placeholder="Enter your cellphone No" name="phone" />
+                            </Form.Group>
+
+                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                <Form.Control as="textarea" rows={6} placeholder="Drop us a line" name="message" />
+                            </Form.Group>
+
+                            <div>
+                                <Button type='submit' style={{ width: '50%' }}>Submit</Button>
+                            </div>
+                            <Form.Text className="text-muted" style={{ fontSize: '10px' }}>
+                                We'll never share your email with anyone else.
+                            </Form.Text>
+                        </Form>
                     </Col>
                 </Row>
             </Breakpoint >
             <ForMobile />
-        </Container>
+        </Container >
 
     )
 }
