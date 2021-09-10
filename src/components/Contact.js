@@ -2,6 +2,13 @@ import React from 'react'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import { Breakpoint } from 'react-socks'
 
+<form name="contact v1" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="text" name="surname" />
+    <input type="email" name="email" />
+    <input type="text" name="phone" />
+    <textarea type="text" name="message" />
+</form>
 //Styles
 
 const rowStyle = {
@@ -17,6 +24,7 @@ const mobileRowstyle = {
     alignItems: 'center',
     flexDirection: 'column'
 }
+
 
 //Responsive sub component
 
