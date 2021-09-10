@@ -13,7 +13,7 @@ const heroStyle = {
 
 const overlayStyle = {
     background: '#152238',
-    opacity: .3,
+    opacity: .5,
     height: '600px',
     position: 'absolute',
     top: 0,
