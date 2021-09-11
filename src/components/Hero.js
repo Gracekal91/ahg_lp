@@ -50,11 +50,14 @@ const OverLay = () => {
 
 const InnerHeroLeft = () => {
     return (
-        <div style={{ paddingTop: '15rem' }}>
-            <h2 > Anchor Hawk Group Security</h2>
-            <p style={{ opacity: .8, letterSpacing: 1 }} >Peace of mind for the safety & security of your business, residence, family or assets, South Africa's Most Comprehensive Security Services.</p>
+        <div>
+
 
             <Breakpoint customQuery="(min-width:420px)">
+                <div style={{ paddingTop: '15rem' }}>
+                    <h2 > Anchor Hawk Group Security</h2>
+                    <p style={{ opacity: .8, letterSpacing: 1 }} >Peace of mind for the safety & security of your business, residence, family or assets, South Africa's Most Comprehensive Security Services.</p>
+                </div>
                 <NavHashLink to="/#about">
                     <Button variant="outline-secondary" size="md me-2" >
                         <BsInfo className="me-2 mb-1" />
@@ -70,6 +73,10 @@ const InnerHeroLeft = () => {
                 </NavHashLink>
             </Breakpoint>
             <Breakpoint customQuery="(max-width:419px)">
+                <div style={{ padding: '5rem 0' }}>
+                    <h2 > Anchor Hawk Group Security</h2>
+                    <p style={{ opacity: .8, letterSpacing: 1 }} >Peace of mind for the safety & security of your business, residence, family or assets, South Africa's Most Comprehensive Security Services.</p>
+                </div>
                 <NavHashLink to="/#contact">
                     <Button size="md" variant="success" >
                         <BsEnvelopeFill className="me-2 mb-1" />
@@ -77,6 +84,7 @@ const InnerHeroLeft = () => {
                     </Button>
                 </NavHashLink>
             </Breakpoint>
+
         </div>
     )
 }
@@ -96,7 +104,7 @@ const Hero = () => {
 
                 <Breakpoint customQuery="(max-width: 879px)">
                     <Row style={{ height: '600px', marginLeft: '-22px', marginRight: '-22px' }}>
-                        <Col><HeroLeft /></Col>
+                        <Col style={{ paddingTop: '5rem' }}><HeroLeft style={{ paddingLeft: '.5rem', paddingRight: '.5rem' }} /></Col>
                     </Row>
                 </Breakpoint>
             </Container>

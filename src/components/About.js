@@ -55,6 +55,8 @@ const About = () => {
                     <Col>
                         <p style={{ margin: '1.5rem 0' }}>
                             It's our responsability to constently provide the highest quality in Security Services. Commercial and Residential Security; This is about doing what is right and safe for you.
+                            Our rates varies from R8,000.00 per Guards/Month depending  on the location and what needs to be secured.
+                            Regardless of the terms and conditions, all our guards are devoted to insuring that security and protection is not a concern for our clients.
                         </p>
                         <Button>Learn More</Button>
                     </Col>
