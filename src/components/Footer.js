@@ -7,7 +7,8 @@ const Footer = () => {
             background: '#152238',
             display: 'flex', alignItems: 'center',
             justifyContent: 'center',
-            color: 'gray', padding: '1rem'
+            color: 'gray', padding: '1rem',
+            fontFamily: 'Urbanist, sansSerif'
         }}>
             2021  - eyespeedtech
         </Container>

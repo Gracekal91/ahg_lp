@@ -32,7 +32,7 @@ const SingleCard = () => {
 
     const card = datas.map((item) => {
         return (
-            <Card style={cardStyle} key={item.id} className="cards">
+            <Card style={cardStyle} key={item.id} className="cards mt-4">
                 <Card.Body>
                     <img src={item.icon} alt="profile" style={{ height: '50px', color: 'white', opacity: .8 }}
                         className="mb-4" />
@@ -74,7 +74,7 @@ const cardStyle = {
     border: 'none',
     textAlign: 'center',
     justifyContent: 'center',
-    webkitBoxShadow: '0px 10px 13px -7px #000000, -12px 23px 30px -4px rgba(0,0,0,0.51)',
+    WebkitBoxShadow: '0px 10px 13px -7px #000000, -12px 23px 30px -4px rgba(0,0,0,0.51)',
     Boxshadow: '0px 10px 13px -7px #000000, -12px 23px 30px -4px rgba(0,0,0,0.51)',
     marginLeft: '.3rem'
 }

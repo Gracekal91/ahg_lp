@@ -7,24 +7,24 @@ import { Breakpoint } from 'react-socks'
 const rowStyle = {
     padding: '6.5rem 4rem',
     display: 'flex',
-    alignItems: 'center'
+    alignItems: 'center',
+    fontFamily: 'Urbanist, sansSerif'
 }
-
 
 const mobileRowstyle = {
-    padding: '6.5rem 4rem',
+    padding: '6.5rem .5rem',
     display: 'flex',
     alignItems: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    fontFamily: 'Urbanist, sansSerif'
 }
-
 
 //Responsive sub component
 
 const ForMobile = () => {
     return (
         <Breakpoint customQuery="(max-width: 900px)">
-            <Row style={mobileRowstyle} >
+            <Row style={mobileRowstyle} id={'contact'}>
                 <Col>
                     <h2 style={{ color: 'white', paddingBottom: '2rem' }}>Leave us your details and we will be in touch to discuss if we are the best fit for you.</h2>
                 </Col>
@@ -54,7 +54,6 @@ const ForMobile = () => {
                             We'll never share your email with anyone else.
                         </Form.Text>
                     </Form>
-
                 </Col>
             </Row>
         </Breakpoint>
@@ -62,12 +61,11 @@ const ForMobile = () => {
 }
 
 const Contact = () => {
-
     return (
         <Container fluid style={{ background: '#23395d', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
 
             <Breakpoint customQuery="(min-width:901px)">
-                <Row style={rowStyle} >
+                <Row style={rowStyle} id={'contact'}>
                     <Col>
                         <h1 style={{ color: 'white' }}>Leave us your details and we will be in touch to discuss if we are the best fit for you.</h1>
                     </Col>

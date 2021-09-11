@@ -10,7 +10,8 @@ import { Breakpoint } from 'react-socks'
 const rowStyle = {
     margin: '6.5rem 4rem',
     display: 'flex',
-    alignItems: 'center'
+    alignItems: 'center',
+    fontFamily: 'Urbanist, sansSerif'
 }
 
 const imgStyle = {
@@ -26,7 +27,7 @@ const About = () => {
     return (
         <Container>
             <Breakpoint customQuery="(min-width: 991px)">
-                <Row
+                <Row id={'about'}
                     style={rowStyle}
                     className="bt-3 pb-3">
                     <h1 style={{ textAlign: 'center', paddingBottom: '2rem', color: '#23395d', textTransform: 'uppercase' }}>The Best Security Solution in Town</h1>
@@ -35,15 +36,16 @@ const About = () => {
                         <img src={sec} alt="feature" style={imgStyle} />
                     </Col>
                     <Col style={{ paddingLeft: '2rem' }}>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
+                        <p>It's our responsability to constently provide the highest quality in Security Services. Commercial and Residential Security; This is about doing what is right and safe for you.</p>
+                        <p>Our rates varies from R8,000.00 per Guards/Month depending  on the location and what needs to be secured.</p>
+                        <p>Regardless of the terms and conditions, all our guards are devoted to insuring that security and protection is not a concern for our clients.</p>
+
                         <Button>Learn More</Button>
                     </Col>
                 </Row>
             </Breakpoint>
             <Breakpoint customQuery="(max-width: 990px)">
-                <Row style={{ display: 'flex', flexDirection: 'column', margin: '2.5rem 0', texttAlign: 'center' }}>
+                <Row style={{ display: 'flex', flexDirection: 'column', margin: '2.5rem 0', texttAlign: 'center', fontFamily: 'Urbanist, sansSerif' }}>
                     <h1 style={{ textAlign: 'center', paddingBottom: '2rem' }}>The Best Security Solution in Town</h1>
 
                     <Col>
@@ -52,7 +54,7 @@ const About = () => {
                     </Col>
                     <Col>
                         <p style={{ margin: '1.5rem 0' }}>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It's our responsability to constently provide the highest quality in Security Services. Commercial and Residential Security; This is about doing what is right and safe for you.
                         </p>
                         <Button>Learn More</Button>
                     </Col>

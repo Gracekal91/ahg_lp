@@ -3,12 +3,14 @@ import { Breakpoint } from 'react-socks';
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import { BsEnvelopeFill, BsInfo } from 'react-icons/bs'
 import herobg from '../img/herobg.jpg'
+import { NavHashLink } from 'react-router-hash-link';
 
 //Custom Styles
 
 const heroStyle = {
     backgroundImage: `url(${herobg})`,
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    fontFamily: 'Urbanist, sansSerif'
 }
 
 const overlayStyle = {
@@ -49,25 +51,31 @@ const OverLay = () => {
 const InnerHeroLeft = () => {
     return (
         <div style={{ paddingTop: '15rem' }}>
-            <h1 > Security Guru</h1>
-            <p style={{ opacity: .6 }} >Hello we Got your back - Regarding security issues - this is a placeholder</p>
+            <h2 > Anchor Hawk Group Security</h2>
+            <p style={{ opacity: .8, letterSpacing: 1 }} >Peace of mind for the safety & security of your business, residence, family or assets, South Africa's Most Comprehensive Security Services.</p>
 
             <Breakpoint customQuery="(min-width:420px)">
-                <Button variant="outline-secondary" size="md me-2" >
-                    <BsInfo className="me-2 mb-1" />
-                    Learn More
-                </Button>
+                <NavHashLink to="/#about">
+                    <Button variant="outline-secondary" size="md me-2" >
+                        <BsInfo className="me-2 mb-1" />
+                        Learn More
+                    </Button>
+                </NavHashLink>
 
-                <Button size="md" style={{ background: '#0577B4' }} >
-                    <BsEnvelopeFill className="me-2 mb-1" />
-                    Get In Touch
-                </Button>
+                <NavHashLink to="/#contact">
+                    <Button size="md" style={{ background: '#0577B4' }} >
+                        <BsEnvelopeFill className="me-2 mb-1" />
+                        Get In Touch
+                    </Button>
+                </NavHashLink>
             </Breakpoint>
             <Breakpoint customQuery="(max-width:419px)">
-                <Button size="md" variant="success" >
-                    <BsEnvelopeFill className="me-2 mb-1" />
-                    Get In Touch
-                </Button>
+                <NavHashLink to="/#contact">
+                    <Button size="md" variant="success" >
+                        <BsEnvelopeFill className="me-2 mb-1" />
+                        Get In Touch
+                    </Button>
+                </NavHashLink>
             </Breakpoint>
         </div>
     )
@@ -77,7 +85,7 @@ const InnerHeroLeft = () => {
 
 const Hero = () => {
     return (
-        <div style={heroStyle} >
+        <div style={heroStyle} id={'hero'}>
             <Container fluid>
                 <Breakpoint customQuery="(min-width: 880px)">
                     <Row style={{ height: '600px', marginLeft: '-22px' }}>
@@ -87,11 +95,10 @@ const Hero = () => {
                 </Breakpoint>
 
                 <Breakpoint customQuery="(max-width: 879px)">
-                    <Row style={{ height: '600px', marginLeft: '-22px' }}>
+                    <Row style={{ height: '600px', marginLeft: '-22px', marginRight: '-22px' }}>
                         <Col><HeroLeft /></Col>
                     </Row>
                 </Breakpoint>
-
             </Container>
         </div >
     )
