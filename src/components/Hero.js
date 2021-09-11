@@ -76,13 +76,14 @@ const InnerHeroLeft = () => {
                 <div style={{ padding: '5rem 0' }}>
                     <h2 > Anchor Hawk Group Security</h2>
                     <p style={{ opacity: .8, letterSpacing: 1 }} >Peace of mind for the safety & security of your business, residence, family or assets, South Africa's Most Comprehensive Security Services.</p>
+
+                    <NavHashLink to="/#contact">
+                        <Button size="md" variant="success" >
+                            <BsEnvelopeFill className="me-2 mb-1" />
+                            Get In Touch
+                        </Button>
+                    </NavHashLink>
                 </div>
-                <NavHashLink to="/#contact">
-                    <Button size="md" variant="success" >
-                        <BsEnvelopeFill className="me-2 mb-1" />
-                        Get In Touch
-                    </Button>
-                </NavHashLink>
             </Breakpoint>
 
         </div>
@@ -104,7 +105,7 @@ const Hero = () => {
 
                 <Breakpoint customQuery="(max-width: 879px)">
                     <Row style={{ height: '600px', marginLeft: '-22px', marginRight: '-22px' }}>
-                        <Col style={{ paddingTop: '5rem' }}><HeroLeft style={{ paddingLeft: '.5rem', paddingRight: '.5rem' }} /></Col>
+                        <Col><HeroLeft style={{ paddingLeft: '.5rem', paddingRight: '.5rem' }} /></Col>
                     </Row>
                 </Breakpoint>
             </Container>

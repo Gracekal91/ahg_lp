@@ -26,7 +26,7 @@ const ForMobile = () => {
         <Breakpoint customQuery="(max-width: 900px)">
             <Row style={mobileRowstyle} id={'contact'}>
                 <Col>
-                    <h2 style={{ color: 'white', paddingBottom: '2rem' }}>Leave us your details and we will be in touch to discuss if we are the best fit for you.</h2>
+                    <h2 style={{ color: 'white', paddingBottom: '2rem' }}>Leave us your details and we will be in touch.</h2>
                 </Col>
                 <Col>
                     <Form name="contact v1" method="post">
@@ -67,7 +67,7 @@ const Contact = () => {
             <Breakpoint customQuery="(min-width:901px)">
                 <Row style={rowStyle} id={'contact'}>
                     <Col>
-                        <h1 style={{ color: 'white' }}>Leave us your details and we will be in touch to discuss if we are the best fit for you.</h1>
+                        <h1 style={{ color: 'white' }}>Leave us your details and we will be in touch.</h1>
                     </Col>
                     <Col>
                         <Form name="contact v1" method="post">
