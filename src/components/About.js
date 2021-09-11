@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import sec from '../img/sec.jpg'
 import { Breakpoint } from 'react-socks'
-
+import { Fade } from 'react-reveal';
 
 
 //Styles
@@ -30,8 +30,9 @@ const About = () => {
                 <Row id={'about'}
                     style={rowStyle}
                     className="bt-3 pb-3">
-                    <h1 style={{ textAlign: 'center', paddingBottom: '2rem', color: '#23395d', textTransform: 'uppercase' }}>The Best Security Solution in Town</h1>
-
+                    <Fade top>
+                        <h1 style={{ textAlign: 'center', paddingBottom: '2rem', color: '#23395d', textTransform: 'uppercase' }}>The Best Security Solution in Town</h1>
+                    </Fade>
                     <Col>
                         <img src={sec} alt="feature" style={imgStyle} />
                     </Col>

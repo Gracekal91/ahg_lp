@@ -55,7 +55,7 @@ const Navigation = () => {
                             </NavHashLink>
                             <Nav.Link>
                                 <FaPhone className="me-2" style={{ fontSize: '1.1rem', marginTop: '-5px' }} />
-                                011-555-5555</Nav.Link>
+                                (27)67-914-8089</Nav.Link>
                         </Nav>
                     </Breakpoint>
 
@@ -95,7 +95,7 @@ const Navigation = () => {
                             </NavHashLink>
                             <Nav.Link href="#">
                                 <FaPhone className="me-2" style={{ fontSize: '1.1rem', marginTop: '-5px' }} />
-                                011-555-5555</Nav.Link>
+                                (27)67-914-8089</Nav.Link>
                         </Nav>
                     </Breakpoint>
 

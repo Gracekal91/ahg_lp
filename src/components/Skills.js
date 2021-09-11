@@ -4,6 +4,7 @@ import { Breakpoint } from 'react-socks'
 import pic_2 from '../img/pic_2.svg'
 import proc from '../img/proc.svg'
 import profile from '../img/profile.svg'
+import { Flip } from 'react-reveal'
 
 // Data
 
@@ -11,20 +12,20 @@ const datas = [
     {
         id: 1,
         icon: pic_2,
-        title: 'This is the first step',
-        text: 'Some quick example text to build on the card title and make up the bulk of the card for the first content'
+        title: 'First Step',
+        text: 'We will get in touch with you to have thorough understanding of your needs in comparison to our security expert advisors. This will take 2-5 minutes over a phone call.'
     },
     {
         id: 2,
         icon: proc,
-        title: 'This is the second step',
-        text: 'Some quick example text to build on the card title and make up the bulk of the card for the second content'
+        title: 'second step',
+        text: 'After consultation over the phone with one of our dedicated area specialists, we will run a site inspection to establish a security level in the area. This happens within 12 hours and takes about 30 minutes to 1 hour on the location.'
     },
     {
         id: 3,
         icon: profile,
-        title: 'This is the third step',
-        text: 'Some quick example text to build on the card title and make up the bulk of the card for the third content'
+        title: 'Third step',
+        text: 'You will be assigned security guards accordingly and the dafety of your property will now be in our hands and our full responsibility.'
     }
 ]
 
@@ -33,12 +34,14 @@ const SingleCard = () => {
     const card = datas.map((item) => {
         return (
             <Card style={cardStyle} key={item.id} className="cards mt-4">
-                <Card.Body>
-                    <img src={item.icon} alt="profile" style={{ height: '50px', color: 'white', opacity: .8 }}
-                        className="mb-4" />
-                    <Card.Title>{item.title}</Card.Title>
-                    <Card.Text style={{ opacity: .8 }}>{item.text}</Card.Text>
-                </Card.Body>
+                <Flip top>
+                    <Card.Body>
+                        <img src={item.icon} alt="profile" style={{ height: '50px', color: 'white', opacity: .8 }}
+                            className="mb-4" />
+                        <Card.Title>{item.title}</Card.Title>
+                        <Card.Text style={{ opacity: .8 }}>{item.text}</Card.Text>
+                    </Card.Body>
+                </Flip>
             </Card>
         )
     })

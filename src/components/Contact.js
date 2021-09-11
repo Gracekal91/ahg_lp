@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import { Breakpoint } from 'react-socks'
-
+import { Fade } from 'react-reveal'
 //Styles
 
 const rowStyle = {
@@ -67,7 +67,9 @@ const Contact = () => {
             <Breakpoint customQuery="(min-width:901px)">
                 <Row style={rowStyle} id={'contact'}>
                     <Col>
-                        <h1 style={{ color: 'white' }}>Leave us your details and we will be in touch.</h1>
+                        <Fade left>
+                            <h1 style={{ color: 'white' }}>Leave us your details and we will be in touch.</h1>
+                        </Fade>
                     </Col>
                     <Col>
                         <Form name="contact v1" method="post">
