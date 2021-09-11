@@ -15,7 +15,9 @@ const Navigation = () => {
                 <Navbar.Brand>
                     <NavHashLink to="/#hero">
                         <img src={ahg_logo} alt="anchor hawk logo" style={{ maxHeight: '40px' }} />
+
                     </NavHashLink>
+                    <span style={{ color: 'white', opacity: .6, fontWeight: 'bold', textDecoration: 'none', paddingLeft: '.5rem', fontSize: '.9rem' }}>Anchor Hawk Group</span>
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="navbarScroll" />

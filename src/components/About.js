@@ -4,7 +4,6 @@ import sec from '../img/sec.jpg'
 import { Breakpoint } from 'react-socks'
 import { Fade } from 'react-reveal';
 
-
 //Styles
 
 const rowStyle = {
@@ -19,9 +18,7 @@ const imgStyle = {
     maxWidth: '100%',
     borderRadius: '8px',
     boxShadow: '-10px 5px 30px rgba(0, 0, 0, 0.5)',
-
 }
-
 
 const About = () => {
     return (
@@ -31,7 +28,7 @@ const About = () => {
                     style={rowStyle}
                     className="bt-3 pb-3">
                     <Fade top>
-                        <h1 style={{ textAlign: 'center', paddingBottom: '2rem', color: '#23395d', textTransform: 'uppercase' }}>The Best Security Solution in Town</h1>
+                        <h2 style={{ textAlign: 'center', paddingBottom: '2rem', color: '#23395d', textTransform: 'uppercase' }}>The Most Affordable Security Solution in Town</h2>
                     </Fade>
                     <Col>
                         <img src={sec} alt="feature" style={imgStyle} />
@@ -47,7 +44,7 @@ const About = () => {
             </Breakpoint>
             <Breakpoint customQuery="(max-width: 990px)">
                 <Row style={{ display: 'flex', flexDirection: 'column', margin: '2.5rem 0', texttAlign: 'center', fontFamily: 'Urbanist, sansSerif' }}>
-                    <h1 style={{ textAlign: 'center', paddingBottom: '2rem' }}>The Best Security Solution in Town</h1>
+                    <h1 style={{ textAlign: 'center', paddingBottom: '2rem' }}>The Most Affordable Security Solution in Town</h1>
 
                     <Col>
                         <img src={sec} alt="feature"
